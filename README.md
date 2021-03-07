@@ -1,5 +1,5 @@
 # RIFE v2.4 - Real Time Video Interpolation
-## [arXiv](https://arxiv.org/abs/2011.06294) | [YouTube](https://www.youtube.com/watch?v=60DX2T3zyVo&feature=youtu.be) | [Bilibili](https://www.bilibili.com/video/BV1K541157te?from=search&seid=5131698847373645765) | [Colab](https://colab.research.google.com/github/hzwer/arXiv2020-RIFE/blob/main/Colab_demo.ipynb) | [Tutorial](https://www.youtube.com/watch?v=gf_on-dbwyU&feature=emb_title)
+## [arXiv](https://arxiv.org/abs/2011.06294) | [YouTube](https://www.youtube.com/watch?v=60DX2T3zyVo&feature=youtu.be) | [Colab](https://colab.research.google.com/github/hzwer/arXiv2020-RIFE/blob/main/Colab_demo.ipynb) | [Tutorial](https://www.youtube.com/watch?v=gf_on-dbwyU&feature=emb_title) | [Demo](https://www.youtube.com/watch?v=oFnyq-e_b3g)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -145,9 +145,9 @@ python3 benchmark/Vimeo90K.py
 python3 benchmark/MiddelBury_Other.py
 # "IE: 1.962"
 python3 benchmark/HD.py
-# "PSNR: 32.124"
+# "PSNR: 31.99"
 python3 benchmark/HD_multi.py
-# "PSNR: 19.92(544*1280), 30.03(720p), 26.71(1080p)"
+# "PSNR: 18.89(544*1280), 28.83(720p), 24.96(1080p)"
 ```
 
 ## Training and Reproduction

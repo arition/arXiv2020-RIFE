@@ -65,9 +65,7 @@ for data in name_list:
                 break
             for i in range(1, 8):
                 tmp, _ = Reader.read(index + i)
-                gt.append(tmp[:, :, ::-1].copy())
-            IMAGE1 = IMAGE1[:, :, ::-1].copy()
-            IMAGE2 = IMAGE2[:, :, ::-1].copy()
+                gt.append(tmp)
         else:
             print('Not Implement')
         I0 = torch.from_numpy(np.transpose(IMAGE1, (2,0,1)).astype("float32") / 255.).cuda().unsqueeze(0)
@@ -93,7 +91,7 @@ for data in name_list:
                 psnr = 20 * math.log10(PIXEL_MAX / math.sqrt(mse))
             else:
                 print('Not Implement')
-        psnr_list.append(psnr)
+            psnr_list.append(psnr)
     print(np.mean(psnr_list))
     tot.append(np.mean(psnr_list))
 
